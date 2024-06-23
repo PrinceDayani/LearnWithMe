@@ -1,0 +1,189 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px; /* Adding padding to body for spacing */
+    background-image: url('/backgground.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+    backdrop-filter: blur(3px);
+
+  }
+  
+  .overlay {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay color */
+    padding: 20px;
+  }
+  
+  header {
+    background-color: rgba(0, 25, 74, 0.9); /* Darker header background color */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2; /* Ensure header is above the overlay */
+    backdrop-filter: blur(3px);
+    border-radius: 28px;
+    /* Adding blur effect to header */
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 20px;
+    position: relative;
+    z-index: 2; /* Ensure main content is above the overlay */
+  }
+  
+  .schedule {
+    margin: 20px 0;
+  }
+  
+  .day {
+    background-color: var(--oxford-blue); /* Adjusting day background color */
+    border-radius: 22px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px); /* Adding blur effect to header */
+
+  }
+  
+.day:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(223, 220, 220, 0.715);
+    backdrop-filter: blur(8px); /* Adding blur effect to header */
+    outline: 2px solid green; /* Adding green outline on hover */
+}
+  
+  .day h2 {
+    background-color: var(--oxford-blue-2); /* Adjusting day title background color */
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  .day .content {
+    padding: 20px;
+    background-color: var(--oxford-blue-2); /* Adjusting day title background color */
+    color: #fff;
+    border-radius: 48px;
+    backdrop-filter: blur(50px); /* Adding blur effect to header */
+
+  }
+  
+  .day h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--penn-blue); /* Using palette color for session titles */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .index-button {
+        background-color: var(--penn-blue); /* Adjusting button background color */
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 48px;
+        outline: 0.5px dotted green; /* Adding green outline on hover */
+
+
+        
+        transition: background-color 0.3s ease;
+    }
+    .index-button:hover {
+        background-color: var(--oxford-blue-2); /* Adjusting hover color */
+  
+        transform: translateY(-2px);
+        box-shadow: 0 3px 3px rgba(223, 220, 220, 0.715);
+        backdrop-filter: blur(8px);
+        /* Adding blur effect to header */
+    
+    }
+
+    .j-index-button {
+        background-color: var(--penn-blue); /* Adjusting button background color */
+        color: #fff;
+        border: none;
+        margin-left:30px;
+        padding: 15px 25px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 48px;
+        outline: 0.5px solid rgb(255, 255, 255); /* Adding green outline on hover */
+        backdrop-filter: blur(40px);
+
+
+        
+        transition: background-color 0.3s ease;
+    }
+    .j-index-button:hover {
+        background-color: var(--oxford-blue-2); /* Adjusting hover color */
+        text-decoration: underline;
+        transform: translateY(-2px);
+        box-shadow: 0 3px 3px rgba(223, 220, 220, 0.715);
+        backdrop-filter: blur(80px);
+        /* Adding blur effect to header */
+    
+    }
+
+  .toggle-button {
+    background-color: var(--penn-blue-3); /* Adjusting button background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-button:hover {
+    background-color: var(--oxford-blue-2); /* Adjusting hover color */
+  }
+  
+  .footer {
+    background-color: rgba(0, 25, 74, 0.6); /* Semi-transparent footer background color */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    backdrop-filter: blur(2px); /* Adding blur effect to footer */
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+  }
+  
